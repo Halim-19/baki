@@ -496,4 +496,40 @@ section{
         margin-top:200px ;
     }
 }
+/*SCROLL BTN*/
+.scrollbtn{
+    visibility: hidden;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 60px;
+    height: 60px;
+    background: #a7a7a7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.show-link{
+    visibility: visible;
+}
+
+.scrollbtn img{
+    right: 50px;
+    width: 50px;
+    animation: mymove 1s linear 1s  infinite;
+}
+@keyframes mymove{
+    0%{
+        transform: translateY(5px);
+    }
+    
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-3px);
+    }
+}
 
