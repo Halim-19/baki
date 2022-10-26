@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>baki</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pf.css">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <section class="part1 ">
+    <div class="background ">
+    </div>
+    <div class="content1">
+        <img src="img/me1.PNG" alt="me" class="meimg ">
+            <button class="clickme">Click Me</button>
+    </div>
+    <div class="content2">
+        <p> 
+            Salam Alikom ,I am <span>Bensalem</span> <span> Abdelhalim</span>, I am a FrontEnd devloper and an Computer Science student, Welcom to my Portfolio.
+        </p>
+        <div class="links">
+            <a href="#aboutme" class="link">About ME</a>
+            <a href="#services" class="link">Services</a>
+            <a href="#contact" class="link">Contact Me</a>
+        </div>
+    </div>
+    </section>
+    <section id="aboutme">
+        <h1>About Me:</h1>
+        <div class="contentabout">
+            <p>I am <span>Bensalem</span> <span> Abdelhalim</span> I have 19 years old, Borne and raised in Algeria , I am a Computer 
+                Science student in my second year at <span>Mascara University</span>,I learn some skills like how to use <span>Adobe premier pro </span>,<span>Light Rome</span> and of cours creating websites using <span>HTML</span>,<span>Css</span>,<span title="javaScript">js</span> and other <span>FrameWorks</span>.
+                </br>I was a Handball player in <span>NasrClub</span>, Now I am a Chalisthenics Athlet and I am working to be the world champion InshaAllah,
+                i have some interset in cinema, I enjoy watching movies,tvSohws and Anime. 
+                
+            </p>
+            <div class="imgcontainer"></div>
+        </div>
+    </section>
+    <section id="services">
+        <h1>Services:</h1>
+        <div class="contentServices">
+            <section class="coding-body"> 
+                <div class="coding-content">
+                    <h1 class="ttl">FrontEnd Dev :</h1>
+                    <p >
+                        <ul>
+                            <li class="para">Fully-responsive webSites</li>
+                            <li class="para">Good structre of code</li>
+                            <li class="para">Vue js FrontEnd devlopment</li>
+                            <li class="para">HTML5,CSS3 code</li>
+                            <li class="para">Bootstrap latesat version </li>
+                            <li class="para">Animation</li>
+                        </ul>
+                    </p>
+                    <a  href="#contact"><button class="btn ">know More</button></a> 
+                </div>
+            </section>
+            <section class="company-body"> 
+                <div class="company-content">
+                    <h1 class="ttl">Meta Cours:</h1>
+                    <p class="para">
+                        Online Education in <br>
+                        <span style="background:black ;">"this service are not available right now"</span>
+                    </p>
+                    <a  href="#contact"><button class="btn ">know More</button></a> 
+                </div>
+            </section>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <div class="contact-centent">
+            <div class="socialMedia">
+                <div class="icon">
+                    <i class="fa-brands fa-instagram"></i>
+                    <a  href="https://instagram.com/bensalem_halim?igshid=YmMyMTA2M2Y=" target="_blank">@bensalem-halim</a>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-linkedin"></i>  
+                    <a href="https://www.linkedin.com/in/bensalem-abdelhalim-4214a21b9"target="_blank">Bensalem Abdelhalim</a>
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-phone"></i>
+                    <span id="nmr" >+213551085452</span>
+                </div>
+            </div>
+            <!--EmailMSG-->
+            <div class="emaileMSG">
+                <h1>Email Me</h1>
+                <form method="post" class="containerEmail">
+                    <input type="text" placeholder="Name" id="name" autocomplet="off" >
+                    <input type="email" placeholder="Email" id="" autocomplet="off" >
+                    <input type="text" placeholder="Subject" id="" autocomplet="off" >
+                    <textarea id="message" placeholder="Message" cols="10" rows="10"></textarea>
+                    <button id="btnEmail" >Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="end">
+        <p>This websie are created by Bensalem Abdelhalim </p>
+        <a href="#">copyright© 2020 BensalemHalim</a>
+    </section>
+
+
+
+	<script src="https://smtpjs.com/v3/smtp.js">
+    </script> 
+    <script>
+        var btn=document.getElementById('btnEmail');
+btn.addEventListener('click',function(e){
+  e.preventDefault()
+  Email.send({
+    Host : "smtp.gmail.com",
+    Username : "bensalemhalim19@gmail.com",
+    Password : "ptnpvgjkdyvguhyo",
+    To : 'webemail1022@gmail.comm',
+    From : "bensalemhalim19@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+  }).then(
+  message => alert(message)
+  );
+})
+    </script>
+
+
+    <script src="https://kit.fontawesome.com/96f05574a8.js" crossorigin="anonymous"></script>
+    <script src="pf.js"></script>
+</body>
+</html>
