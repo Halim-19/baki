@@ -432,7 +432,13 @@ section{
     .socialMedia{
         width: 100%;
     }
-
+    .icon i{
+        padding: 5px;
+        font-size: 3rem;
+    }
+    .icon a,#nmr{
+        font-size: 1.2rem;
+    }
     .contact-centent{
         width: 100%;
         height: 100%;
