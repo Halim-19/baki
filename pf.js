@@ -9,20 +9,24 @@ click.addEventListener('click',e=>{
     overflow.classList.add('overflow')
 })
 
+/*scroll button*/
+const topLink = document.querySelector('.scrollbtn');
 
-//services
-/*
-const openning = document.querySelector('.btn');
-const closing = document.querySelector('#xmark');
-const modal = document.querySelector('.coding-open');
+window.addEventListener("scroll", function () {
+  const scrollHeight = window.pageYOffset;
+  // setup back to top link
 
+  if (scrollHeight > 500) {
+    console.log("helo");
 
-openning.addEventListener('click',function(){
-    modal.style.visibility="visible";
+    topLink.classList.add("show-link");
+  } else {
+    topLink.classList.remove("show-link");
+  }
 });
-
-closing.addEventListener('click',function(){
-    modal.style.visibility="hidden";
+topLink.addEventListener('click',function(){
+    window.scrollTo({
+        left:0,
+        top:0,
+      })
 })
-*/
-
