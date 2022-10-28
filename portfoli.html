@@ -96,7 +96,7 @@
             <!--EmailMSG-->
             <div class="emaileMSG">
                 <h1>Email Me</h1>
-                <form method="post" class="containerEmail">
+                <form action="https://formspree.io/f/xjvzajbz" method="post" class="containerEmail">
                     <input type="text" placeholder="Name" id="name" autocomplet="off" >
                     <input type="email" placeholder="Email" id="" autocomplet="off" >
                     <input type="text" placeholder="Subject" id="" autocomplet="off" >
@@ -115,27 +115,7 @@
     </div>
 
 
-	<script src="https://smtpjs.com/v3/smtp.js">
-    </script> 
-    <script>
-        var btn=document.getElementById('btnEmail');
-btn.addEventListener('click',function(e){
-  e.preventDefault()
-  Email.send({
-    Host : "smtp.gmail.com",
-    Username : "bensalemhalim19@gmail.com",
-    Password : "ptnpvgjkdyvguhyo",
-    To : 'webemail1022@gmail.comm',
-    From : "bensalemhalim19@gmail.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
-  }).then(
-  message => alert(message)
-  );
-})
-    </script>
-
-
+	<script src="https://smtpjs.com/v3/smtp.js"></script> 
     <script src="https://kit.fontawesome.com/96f05574a8.js" crossorigin="anonymous"></script>
     <script src="pf.js"></script>
 </body>
